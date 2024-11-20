@@ -1,6 +1,6 @@
 // script.js
 
-// Toggle del menú de navegación en móviles
+// Toggle del menú de navegación en móviles con animación
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 

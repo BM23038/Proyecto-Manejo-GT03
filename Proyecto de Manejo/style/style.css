@@ -136,6 +136,7 @@ h3:hover .gif {
 .navbar .menu {
   display: flex;
   gap: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .navbar .menu a {
@@ -164,28 +165,28 @@ h3:hover .gif {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Responsividad */
+/* Estado inicial oculto del menú móvil */
 @media (max-width: 768px) {
   .menu {
-    display: none;
-    flex-direction: column;
     position: absolute;
     top: 50px;
     right: 20px;
     background-color: #333;
-    border-radius: 8px;
+    flex-direction: column;
+    gap: 15px;
     width: 150px;
     padding: 10px;
-    gap: 10px;
-  }
-
-  .menu a {
-    text-align: center;
-    padding: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
   }
 
   .menu.show {
-    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
   }
 
   .menu-toggle {
