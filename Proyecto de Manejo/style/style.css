@@ -56,7 +56,11 @@ header h1 {
 
 .details h2 {
   font-size: 2em;
-  color: #ffffff;
+<<<<<<<<< Temporary merge branch 1
+  color: #000000;
+=========
+  color: #ffffff; /* Color dorado brillante */
+>>>>>>>>> Temporary merge branch 2
   margin-bottom: 10px;
   text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
 }
