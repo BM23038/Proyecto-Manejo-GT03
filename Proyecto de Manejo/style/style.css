@@ -78,26 +78,6 @@ footer {
   border-radius: 10px;
 }
 
-h3 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-h3 .gif {
-  border-radius: 10px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  width: 200px;
-}
-
-h3:hover .gif {
-  display: block;
-}
-
 /* Redes sociales */
 .social-media {
   margin-top: 10px;
@@ -197,7 +177,6 @@ h3:hover .gif {
     display: flex;
   }
 }
-
 
 /* Estilos responsivos */
 @media (max-width: 450px) {
