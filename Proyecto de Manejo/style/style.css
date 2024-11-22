@@ -11,6 +11,11 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 20%;
+}
+
+.container h1 {
+  border-radius: 10px;
 }
 
 /* Header styles */
@@ -37,7 +42,7 @@ header h1 {
 }
 
 
-/* Biography section */
+/* Biografia */
 .bio {
   display: flex;
   flex-wrap: wrap;
@@ -86,26 +91,6 @@ footer {
   background-color: #333;
   color: #fff;
   border-radius: 10px;
-}
-
-h3 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-h3 .gif {
-  border-radius: 10px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  width: 200px;
-}
-
-h3:hover .gif {
-  display: block;
 }
 
 /* Redes sociales */
