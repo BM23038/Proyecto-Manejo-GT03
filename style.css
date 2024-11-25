@@ -1,0 +1,250 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20%;
+}
+
+.container h1 {
+  border-radius: 10px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  background-color: #000000;
+  font-size: 2.5em;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.alineado-borde {
+  color: white; /* Color principal del texto */
+  text-shadow: 
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black; /* Simula el borde con sombras */
+  font-size: 2em; /* Ajusta según el tamaño del texto */
+}
+
+
+/* Biografia */
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Logo_LuisMiguel {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  font-size: 2em;
+  color: #ffffff; /* Color dorado brillante */
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.details p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* Redes sociales */
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 0.8), 0 0 20px rgba(0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo a {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+  color: #d2691e;
+}
+
+/* Menú Toggle (Solo para móviles) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estado inicial oculto del menú móvil */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #333;
+    flex-direction: column;
+    gap: 15px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 450px) {
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+    padding: 5px;
+  }
+
+  .bio {
+    gap: 10px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .details h2 {
+    font-size: 1.5em;
+  }
+}
